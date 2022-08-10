@@ -6,7 +6,7 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import TweetTokenizer
 
 def process_tweet(tweet):
-    stemmer PorterStemmer()
+    stemmer=PorterStemmer()
     stopwords_english=stopwords.words('english')
     t=re.sub(r'\$\w*', '',t)
     t=re.sub(r'^RT[\s]+', '',t)
